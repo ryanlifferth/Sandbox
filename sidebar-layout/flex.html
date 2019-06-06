@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-TXfwrfuHVznxCssTxWoPZjhcss/hp38gEOH8UPZG/JcXonvBQ6SlsIF49wUzsGno" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/flex.css" />
+</head>
+<body>
+
+    <header class="header fixed-top flex-md-nowrap p-0">
+        <nav class="navbar ">
+            nav stuff....
+        </nav>
+    </header>
+
+    <div class="body-container">
+
+        <div class="sidebar">
+            <a class="sb-item active" href="#">
+                <span class="far fa-home fa-lg sb-icon"></span>
+            </a>
+
+            <a class="sb-item" href="#">
+                <span class="fal fa-cog fa-lg sb-icon"></span>
+            </a>
+        </div>
+
+        <div class="main">
+
+            <p style="height: 450px;">
+                <br /><br />
+                More content goes here
+                <br /><br />
+            </p>
+            <a href="#" id="AddContent">Add Some</a>
+
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        [footer content]
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(
+            function () {
+
+                // Stuff goes here
+
+                $("#AddContent").on("click", function () {
+                    $(".main").append("<br /><br />More content<br /><br />");
+
+                    return false;
+                });
+
+            }
+        );
+    </script>
+</body>
+</html>
